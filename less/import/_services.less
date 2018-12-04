@@ -1,0 +1,100 @@
+.row {
+    margin-top: 30px;
+}
+.services-wrapp {
+    width: 100%;
+    background-color: #ffffff;
+    height: 800px;
+}
+.services {
+    margin: 0 auto;
+    width: 1140px;
+    height: 100%;
+    &-title {
+        width: 100%;
+        height: 60px;
+    }
+    &-pages {
+        width: 100%;
+        height: 750px;
+    }
+    &-card {
+        position: relative;
+        width: 360px;
+        height: 360px;
+        &-window {
+            position:absolute;
+            left:0;
+            bottom:0;
+            right:0;
+            top:0;
+            background:rgba(0, 0, 0, 0.5);
+            padding-top: 35%;
+            display:none;
+            transition: 0.6s;
+        }
+    }
+    &-buttons {
+        width: 100%;
+        height: 220px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+.feedback {
+    height: 120px;
+    width: 250px;
+    &-btn {
+        width: 250px;
+        height: 50px;
+    }
+    &-number {
+        width: 250px;
+        height: 50px;
+        margin-top: 20px;
+        background-color: #fff;
+    }
+}
+// Services card 
+.services-card:hover .services-card-window {
+    display: block;
+    cursor: pointer;
+}
+.adaptive {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+// Services link button
+.window {
+    margin: auto;
+    width: 200px;
+    height: 100px;
+    &-title {
+        width: 100%;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &-button {
+        width: 100%;
+        height: 50px;
+    }
+}
+.window-btn {
+    height: 50px;
+    width: 200px;
+    background-color: #fff;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color:#333333;
+    &:hover{
+        text-decoration: none;
+        color: #333333;
+    }
+}
