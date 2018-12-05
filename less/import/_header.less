@@ -24,7 +24,33 @@
         width: 100%;
         height: 120px;
         margin-top: 70px;
+        &-container {
+            margin: auto;
+            width: 250px;
+            height: 120px;
+        }
     }
+
+    // yclients header button
+    .yclients-btn {
+        width: 250px;
+        height: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #fff;
+        border-radius: 30px;
+        box-shadow: 0px 0px 10px rgba(235, 87, 87, 0.22);
+        text-decoration: none;
+        color: @title;
+        transition:  0.5s;
+        &:hover {
+            text-decoration: none;
+            transition:  0.5s;
+            box-shadow: 0px 4px 25px rgba(180, 75, 75, 0.247);
+        }
+    }
+
     &-social {
         width: 100%;
         height: 50px;
