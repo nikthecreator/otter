@@ -4,6 +4,7 @@ body {
 }
 
 .row-contacts {
+    width: 880px;
     margin: 0;
     padding: 0;
 }
@@ -28,19 +29,27 @@ body {
     }
     &-cards {
         margin: auto;
+        padding-top: 50px;
         width: 100%;
         height: 170px;
         display: flex;
         justify-content: center;
     }
     &-page {
-        margin: 0;
         width: 250px;
-        height: 170px;
-        background-color: #000000;
+        height: 170px;;
         &-img {
             width: 250px;
-
+            height: 70px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        &-text {
+            padding-top: 20px;
+            width: 250px;
+            height: 100px;
+            text-align: center;
         }
     }
 }
