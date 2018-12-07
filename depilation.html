@@ -52,15 +52,15 @@
                 <div class="price-footer-buttons">
                     <div class="feedback-group">
                         <div class="feedback-group-yclients">
-                            <a href="https://n89990.yclients.com/company:103814?o=s2563447,1411491,2284169" class="yclients-price-btn">Хочу записаться</a>
+                            <a href="https://n89990.yclients.com/company:103814?o=s2563447,1411491,2284169" class="yclients-price-btn"><span class="yclients-price">Хочу записаться</span></a>
                         </div>
                         <div class="feedback-group-number">
-
+                            <span class="feedback-number-price">+375 44 584 66 29</span>
                         </div>
                         <div class="feedback-group-call">
-                            <div class="call-btn">
-
-                            </div>
+                                <button type="button" class="send-btn-price" data-toggle="modal" data-target="#exampleModal">
+                                        Хочу записаться
+                                </button>
                         </div>
                     </div>
                 </div>
@@ -82,7 +82,25 @@
         </div>
     </div>
 
-
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    </div>
+                    <div class="modal-body">
+                    ...
+                    </div>
+                    <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
