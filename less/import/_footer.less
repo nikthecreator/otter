@@ -10,7 +10,7 @@ footer {
     align-items: center;
 }
 .footer {
-    width: 1170px;
+    width: 1140px;
     height: 100px;
     display: flex;
     justify-content: space-between;
@@ -47,4 +47,102 @@ footer {
     &:focus {
         outline: none;
     }
-}    
+}
+
+// Media Queries
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+    .footer {
+        width: 920px;
+        &-navs {
+            width: 350px;
+        }
+    }
+ }
+
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) {
+    footer {
+        height: 500px;
+    }
+    .footer {
+        width: 400px;
+        height: 400px;
+        flex-direction: column;
+        &-navs {
+            width: 300px;
+            flex-direction: column;
+        }
+        &-number {
+            width: 300px;
+            flex-direction: column;
+            &-phone {
+                margin-top: 50px;
+            }
+            &-btn {
+                margin-top: 30px;
+            }
+        }
+        &-text {
+            margin-top: 30px;
+        }
+    }   
+}
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) { 
+    footer {
+        height: 500px;
+    }
+    .footer {
+        width: 300px;
+        height: 400px;
+        flex-direction: column;
+        &-navs {
+            width: 300px;
+            flex-direction: column;
+        }
+        &-number {
+            width: 300px;
+            flex-direction: column;
+            &-phone {
+                margin-top: 50px;
+            }
+            &-btn {
+                margin-top: 30px;
+            }
+        }
+        &-text {
+            margin-top: 30px;
+        }
+    }
+}
+
+// Extra small devices (portrait phones, less than 576px)
+@media  (max-width: 575.98px) {
+    footer {
+        height: 500px;
+    }
+    .footer {
+        width: 300px;
+        height: 400px;
+        flex-direction: column;
+        &-navs {
+            width: 300px;
+            flex-direction: column;
+        }
+        &-number {
+            width: 300px;
+            flex-direction: column;
+            &-phone {
+                margin-top: 50px;
+            }
+            &-btn {
+                margin-top: 30px;
+            }
+        }
+        &-text {
+            margin-top: 30px;
+        }
+    }
+}
