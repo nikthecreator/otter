@@ -135,3 +135,111 @@
         color: #333333;
     }
 }
+
+// Media Queries
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+    .services {
+        margin: auto;
+        width: 992px;
+        &-pages {
+            height: 650px;
+        }
+        &-card {
+            width: 300px;
+            height: 300px;
+        }
+    }
+    .row {
+        margin-left: 0;
+        margin-right: 0;
+    }
+ }
+
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) { 
+    .services {
+        width: 768px;
+        &-pages {
+            height: 500px;
+        }
+        &-card {
+            width: 220px;
+            height: 220px;
+        }
+    }
+    .row {
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) { 
+    .row {
+        margin-top: 0;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .col {
+        margin-top: 30px;
+    }
+    .services-wrapp {
+        width: 100%;
+    }
+    .services {
+        width: 767px;
+        &-pages {
+            height: 2000px;
+        }
+        &-card {
+            margin: auto;
+            width: 300px;
+            height: 300px;
+        }
+    }
+}
+
+// Extra small devices (portrait phones, less than 576px)
+@media  (max-width: 575.98px) {
+    .row {
+        margin-right: 0;
+        margin-left: 0;
+        margin-top: 0;
+    }
+    .col {
+        margin-top: 30px;
+    }
+    .services-wrapp {
+        width: 100%;
+    } 
+    .services {
+        width: 425px;
+        &-pages {
+            height: 1950px;
+        }
+        &-card {
+            margin: auto;
+            width: 300px;
+            height: 300px;
+            &-window {
+                display: block;
+            }
+        }
+        &-buttons {
+            width: 100%;
+            height: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+    
+}
+
+// Large devices (desktops, less than 1200px)
+// @media (max-width: 1199.98px) { ... }
+
+// Extra large devices (large desktops)
+// No media query since the extra-large breakpoint has no upper bound on its width
