@@ -529,16 +529,16 @@
                     </div>
                     <div class="modal-body">
                         <!-- Form group -->
-                        <form>
+                        <form action="./mail.php" method="POST">
                             <!-- name -->
                             <div class="form-group">
                                 <label for="exampleInputEmail1">Введите ваше имя</label>
-                                <input type="text" class="form-control" id="exampleInputName" aria-describedby="emailHelp" placeholder="Ваше имя">
+                                <input type="text" class="form-control" id="exampleInputName" aria-describedby="emailHelp" placeholder="Ваше имя" name="user_name">
                             </div> 
                              <!--phone  -->
                             <div class="form-group">
                                 <label for="exampleInputPassword1">Введите номер телефона</label>
-                                <input type="text" class="form-control" id="exampleInputPhone" placeholder="Ваш телефон">
+                                <input type="text" class="form-control" id="exampleInputPhone" placeholder="Ваш телефон" name="user_phone">
                             </div>
                         </form>
                     </div>
