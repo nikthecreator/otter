@@ -1,6 +1,6 @@
 .wrapp-masters {
     width: 100%;
-    height: 950px;
+    height: 1050px;
     background-color: @masters-bg;
 }
 
@@ -23,7 +23,7 @@
     // masters cards
     &-card {
         width: 360px;
-        height: 350px;
+        height: 420px;
         border-radius: 10px;
         background-color: #fff;
         &-header {
@@ -75,6 +75,36 @@
             height: 220px;
             padding: 15px;
         }
+        &-footer {
+            width: 100%;
+            height: 60px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}
+
+.wrapp-card {
+    text-decoration: none;
+}
+
+.card-footer-btn {
+    text-decoration: none;
+    width: 90%;
+    height: 50px;
+    border-radius: 5px;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: @home-btn;
+    color: #fff;
+    transition: 0.3s;
+    &:hover {
+        text-decoration: none;
+        color: #fff;
+        background-color: rgb(16, 141, 129);
     }
 }
 
@@ -107,7 +137,7 @@
     }
     .wrapp-masters {
         width: 100%;
-        height: 2500px;
+        height: 2820px;
     } 
     .masters {
         width: 750px;
@@ -130,6 +160,9 @@
 
 // Small devices (landscape phones, less than 768px)
 @media (max-width: 767.98px) { 
+    .wrapp-masters {
+        height: 2820px;
+    }
     .masters {
         width: 450px;
     }
@@ -139,6 +172,7 @@
 @media  (max-width: 575.98px) {
     .wrapp-masters {
         width: 100%;
+        height: 2820px;
     }
     .masters {
         width: 100%;
