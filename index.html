@@ -52,12 +52,59 @@
             </a>
     </div>
 
+    <div class="header-block">
+        <div class="header-block-mob">
+            <img src="./img/home-text.svg" alt="">
+        </div>
+    </div>
+
     <!-- Header -->
     <div class="header-wrapp">
         <div class="header">
             <div class="header-navbar">
                 <div class="header-navbar-mob">
-                    <img src="./img/header-logo.svg" alt="">
+                    <a href="./contacts.html">
+                        <div class="loc">
+                            <div class="loc-link">
+                                <div class="loc-link-img">
+                                    <img src="./img/pin-btn.svg" alt="">
+                                </div>
+                                <div class="loc-link-text">
+                                    <span class="title-value">
+                                        как добраться?
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <!-- <img src="./img/home-text.svg" alt=""> -->
+                    <div class="menu">
+                        <div id="myNav" class="overlay">
+
+                            <!-- Button to close the overlay navigation -->
+                            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                          
+                            <!-- Overlay content -->
+                            <div class="overlay-content">
+                              <a href="./contacts.html">Контакты</a>
+                              <a href="./depilation.html">Депиляция</a>
+                              <a href="./casmetology.html">Косметология</a>
+                              <a href="./brow.html">Брови и ресницы</a>
+                              <a href="./nails.html">Ногтевой сервис</a>
+                              <a href="./makeup.html">Make Up</a>
+                              <a href="https://n89990.yclients.com/company:103814?o=s2563447,1411491,2284169">Хочу записаться</a>
+                              <button type="button" class="send-btn-menu" data-toggle="modal"                        data-target="#exampleModal">
+                                    Заказать звонок
+                                </button>
+                            </div>
+                          
+                        </div>
+                          
+                          <!-- Use any element to open/show the overlay navigation menu -->
+                          <span class="menu-btn" onclick="openNav()">
+                            <img src="./img/burger-menu-btn.svg" alt="">
+                          </span>
+                    </div>
                 </div>
                 <div class="header-navbar-desk">
                     <a href="./contacts.html">
@@ -77,8 +124,8 @@
                     <div class="logo-desk">
                         <img src="./img/header-logo.svg" alt="">
                     </div>
-                    <div class="menu">
-                        <div id="myNav" class="overlay">
+                    <div class="menu menu-desk">
+                        <div id="myNavDesk" class="overlay">
 
                             <!-- Button to close the overlay navigation -->
                             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
@@ -109,9 +156,20 @@
             <div class="header-img">
                 <img src="./img/header-img.png" alt="">
             </div>
-            <div class="header-buttons">
+            <div class="header-buttons buttons-desck">
                 <div class="header-buttons-container">
                     <a href="https://n89990.yclients.com/company:103814?o=s2563447,1411491,2284169" class="yclients-btn">Хочу записаться</a>
+                </div>
+            </div>
+            <!-- Header buttons -->
+            <div class="header-buttons-mobile">
+                <div class="header-buttons-mobile-cont">
+                    <div class="btn-1">
+                        <a href="https://n89990.yclients.com/company:103814?o=s2563447,1411491,2284169" class="yclients-btn">Хочу записаться</a>
+                    </div>
+                    <div class="btn-2">
+                        <a href="#scroll" class="scroll-down-mob" address="true"></a>
+                    </div>
                 </div>
             </div>
             <div class="header-number">
@@ -120,9 +178,6 @@
                             <span class="feedback-number-header">+375 44 584 66 29</span>
                         </div></a>
                     </div> 
-            </div>
-            <div class="header-scroll-mobile">
-                <a href="#scroll" class="scroll-down" address="true"></a>
             </div>
             <div class="header-social">
                 <div class="header-social-links">
@@ -137,6 +192,8 @@
             </div>
         </div>
     </div>
+
+    
 
     <!-- Services -->
     <div class="services-wrapp" id="scroll">
