@@ -65,7 +65,7 @@
     }
     &-footer {
         width: 100%;
-        height: 340px;
+        height: 300px;
         border-top: 1px solid #E5E5E5;
         &-buttons {
             width: 100%;
@@ -77,6 +77,7 @@
         &-home {
             width: 100%;
             height: 70px;
+            display: none;
         }
     }
     &-text {
@@ -108,18 +109,8 @@
 // home green button
 .home-btn {
     width: 100%;
-    height: 70px;
-    background-color: @home-btn;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    &-group {
-        width: 130px;
-        height: 30px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
+    height: 60px;
+    color: #fff;
 }
 .home-arow {
     width: 30px;
@@ -178,12 +169,99 @@
     }
 }
 
+.homepage-link {
+    position: fixed;
+    right: 50px;
+    top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 130px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: @home-btn;
+    color: #fff;
+    &:hover {
+        text-decoration: none;
+        color: #fff;
+        background-color: rgb(19, 143, 130);
+    }
+}
+
+.pagelink-wrapper {
+    width: 100%;
+    height: 60px;
+    border-top: 1px solid #E5E5E5;
+    background-color: #ffffff;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.pagelink {
+    width: 90%;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &-home {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 45%;
+        height: 40px;
+        border: 1px solid #E5E5E5;
+        border-radius: 5px;
+        color: @title;
+
+    }
+    &-reg {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 45%;
+        height: 40px;
+        background-color: @pink-btn;
+        border-radius: 5px;
+        color: #fff;
+        &:hover {
+            text-decoration: none;
+            color: #fff;
+        }
+    }
+}
+
 // Media queries
+
+@media (max-width: 767.98px) { 
+    .homepage-link {
+        display: none;
+    }
+    .pagelink-wrapper {
+        display: flex;
+    }
+    .price-footer-home {
+        display: block;
+    }
+}
+
 @media (max-width: 575.98px) {
+    .price-footer-home {
+        display: block;
+    }
+    .homepage-link {
+        display: none;
+    }
     .price {
-        width: 320px;
+        width: 100%;
         &-text {
             width: 320px;
         }
+    }
+    .pagelink-wrapper {
+        display: flex;
     }
 }
