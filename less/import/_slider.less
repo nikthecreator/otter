@@ -1,0 +1,82 @@
+.wrapp-slider {
+    width: 100%;
+}
+.slider {
+    width: 1140px;
+    height: 600px;
+    margin: auto;
+    &-title {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px;
+    }
+}
+
+.slide {
+    width: 1140px;
+    margin-top: 50px;
+    text-decoration: none;
+    &-card {
+        width: 300px;
+        height: 300px;
+        border-radius: 10px;
+        border: 1px solid #E5E5E5;
+        &:hover {
+            border: 3px solid #E5E5E5;
+            
+        }
+        
+    }
+}
+
+.slick-prev {
+    position: absolute;
+    top: 130px;
+    left: -50px;
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    text-indent: -9999px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    background-image: url(/img/arow-left.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.5;
+    transition: all 0.4s;
+    &:hover {
+        cursor: pointer;
+        transition: all 0.4s;
+        opacity: 1;
+    }
+}
+
+.slick-next {
+    position: absolute;
+    top: 130px;
+    right: -50px;
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    text-indent: -9999px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    background-image: url(/img/arow-right.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.5;
+    transition: all 0.4s;
+    &:hover {
+        cursor: pointer;
+        transition: all 0.4s;
+        opacity: 1;
+    }
+}
