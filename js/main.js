@@ -69,3 +69,15 @@ $('.slide').slick({
     // instead of a settings object
   ]
 });
+
+
+// Masters slick slider
+
+$('.master-slide').slick({
+  infinite: true,
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  prevArrow: $('.prev'),
+  nextArrow: $('.next'),
+  centerMode: true
+});
