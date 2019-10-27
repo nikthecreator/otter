@@ -24,10 +24,19 @@ function closeNav() {
 // Slick Slider
 $('.slide').slick({
   infinite: true,
-  slidesToShow: 3,
+  slidesToShow: 4,
   slidesToScroll: 3,
   centerMode: true,
   responsive: [
+    {
+      breakpoint: 1402,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        infinite: true,
+        dots: false
+      }
+    },
     {
       breakpoint: 1024,
       settings: {
@@ -75,13 +84,23 @@ $('.slide').slick({
 
 $('.master-slide').slick({
   infinite: true,
-  slidesToShow: 3,
+  slidesToShow: 4,
   slidesToScroll: 1,
   prevArrow: $('.prev'),
   nextArrow: $('.next'),
   centerMode: true,
   responsive: [
     {
+      breakpoint: 1402,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        infinite: true,
+        dots: false
+      }
+    },
+    {
+      
       breakpoint: 1024,
       settings: {
         slidesToShow: 2,
