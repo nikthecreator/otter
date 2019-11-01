@@ -70,9 +70,21 @@
 // Extra small devices (portrait phones, less than 576px)
 @media  (max-width: 575.98px) {
    .scroll-item {
-       width: 320px;
-   }
-   .scroll {
+       margin: auto;
+       width: 280px;
+       display: flex;
+       justify-content: center;
+       flex-direction: column;
        height: 500px;
    }
+   .scroll {
+       margin: 0;
+       padding: 0;
+       height: 4050px;
+       width: 100%;
+       overflow-x: hidden;
+        overflow-y: none;
+        white-space: nowrap;
+   }
+
 }
