@@ -24,44 +24,183 @@
     <title>Otter Salon</title>
   </head>
   <body>
-    <h1>Photo</h1>
-    <a href="./index.html">Главная</a>
     <div class="wrapp-container">
         <div class="container">
-            <div class="row">
+            <div class="photo-nav">
+                <a href="/index.html" class="photo-nav__link">
+                    <img src="./img/arrow-link.svg" alt="">
+                    <span class="photo-nav__text">Главная</span>
+                </a>
+                <h2>Фотогалерея</h2>
+            </div>
+            <div class="row" id="first-row">
                 <div class="photo-card">
-                    <div class="photo-card-footer">
-                        <div class="photo-card-footer__text">
-                            
+                   <div class="photo-card-img">
+                       <img src="" alt="">
+                   </div>
+                   <div class="photo-card-text">
+                       <h4 class="photo-title">Депиляция</h4>
+                       <span>12 фото</span>
+                   </div>
+                   <div class="photo-card-link">
+                        <div class="photo-card-link__btn">
+                            <button onclick="openModal();currentSlide(1)">
+                                Показать
+                            </button>
                         </div>
-                        <div class="photo-card-footer__icon">
-
-                        </div>
-                    </div>
+                   </div> 
                 </div>
                 <div class="photo-card">
-                    <div class="photo-card-footer">
-                        <div class="photo-card-footer__text">
-
+                   <div class="photo-card-img">
+                       <img src="" alt="">
+                   </div>
+                   <div class="photo-card-text">
+                       <h4 class="photo-title">Депиляция</h4>
+                       <span>12 фото</span>
+                   </div>
+                   <div class="photo-card-link">
+                        <div class="photo-card-link__btn">
+                            Показать
                         </div>
-                        <div class="photo-card-footer__icon">
-
-                        </div>
-                    </div>
+                   </div>
                 </div>
                 <div class="photo-card">
-                    <div class="photo-card-footer">
-                        <div class="photo-card-footer__text">
-
+                   <div class="photo-card-img">
+                       <img src="" alt="">
+                   </div>
+                   <div class="photo-card-text">
+                       <h4 class="photo-title">Депиляция</h4>
+                       <span>12 фото</span>
+                   </div>
+                   <div class="photo-card-link">
+                        <div class="photo-card-link__btn">
+                            Показать
                         </div>
-                        <div class="photo-card-footer__icon">
+                   </div> 
+                </div>
+            </div>
 
+            <div class="row" id="second-row">
+                <div class="photo-card">
+                   <div class="photo-card-img">
+                       <img src="" alt="">
+                   </div>
+                   <div class="photo-card-text">
+                       <h4 class="photo-title">Депиляция</h4>
+                       <span>12 фото</span>
+                   </div>
+                   <div class="photo-card-link">
+                        <div class="photo-card-link__btn">
+                            Показать
                         </div>
-                    </div>
+                   </div> 
+                </div>
+                <div class="photo-card">
+                   <div class="photo-card-img">
+                       <img src="" alt="">
+                   </div>
+                   <div class="photo-card-text">
+                       <h4 class="photo-title">Депиляция</h4>
+                       <span>12 фото</span>
+                   </div>
+                   <div class="photo-card-link">
+                        <div class="photo-card-link__btn">
+                            Показать
+                        </div>
+                   </div>
+                </div>
+                <div class="photo-card">
+                   <div class="photo-card-img">
+                       <img src="" alt="">
+                   </div>
+                   <div class="photo-card-text">
+                       <h4 class="photo-title">Депиляция</h4>
+                       <span>12 фото</span>
+                   </div>
+                   <div class="photo-card-link">
+                        <div class="photo-card-link__btn">
+                            Показать
+                        </div>
+                   </div> 
                 </div>
             </div>
         </div>
     </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="wrapp-footer">
+            <div class="footer">
+                <div class="footer-logo">
+                    <img src="./img/logo-futer.svg" alt="">
+                </div>
+                <div class="footer-navs">
+                    <a href="./contacts.html" class="footer-text">Как добраться?</a>
+                    <a href="./contacts.html" class="footer-text">Контакты</a>
+                    <a href="https://n89990.yclients.com/" class="footer-text">Онлайн запись</a>
+                </div>
+                <div class="footer-number">
+                        <a href="tel:+375445846629" title="Позвонить">
+                            <div class="footer-number-phone">
+                                <img src="./img/pointer.svg" alt="">
+                                <span class="feedback-number-price">+375 44 584 66 29</span>
+                            </div>
+                        </a>   
+                    <div class="footer-number-btn">
+                            <button type="button" class="send-btn-footer" data-toggle="modal" data-target="#exampleModal">
+                                Заказать звонок
+                            </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal photogalery -->
+    <div id="myModal" class="modal__photo">
+        <span class="close cursor" onclick="closeModal()">
+          <img src="./img/circle-x.svg" alt="">
+        </span>
+        <div class="modal-content__photo">
+      
+          <div class="mySlides">
+            <div class="numbertext">1 / 4</div>
+            <img src="/img/masters/Alesya_Lapushkina.png" class="responsive">
+          </div>
+      
+          <div class="mySlides">
+            <div class="numbertext">2 / 4</div>
+            <img src="/img/masters/alex.jpg" class="responsive">
+          </div>
+      
+          <div class="mySlides">
+            <div class="numbertext">3 / 4</div>
+            <img src="./img/masters/ann.jpg" class="responsive">
+          </div>
+          
+          <div class="mySlides">
+            <div class="numbertext">4 / 4</div>
+            <img src="/img/Прованс отбор/1Y9A5950 19.jpg"  class="responsive">
+          </div>
+  
+          <a class="prev" onclick="plusSlides(-1)">
+            <img src="/img/arrow-left.svg" class="box-arrow" alt="">
+          </a>
+          <a class="next" onclick="plusSlides(1)">
+            <img src="/img/arrow-right.svg" class="box-arrow" alt="">
+          </a>
+  
+          
+        </div>
+        <div class="wrapper">
+          <a class="prevMy" onclick="plusSlides(-1)">
+            <img src="/img/arrow-left.svg" class="box-arrow" alt="">
+          </a>
+          <a class="nextMy" onclick="plusSlides(1)">
+            <img src="/img/arrow-right.svg" class="box-arrow" alt="">
+          </a>
+        </div>
+      </div>
 
 
 
