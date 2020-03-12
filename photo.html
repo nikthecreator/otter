@@ -36,7 +36,7 @@
             <div class="row" id="first-row">
                 <div class="photo-card">
                    <div class="photo-card-img">
-                       <img src="" alt="">
+                       <img src="/img/photogallery/shugaring/1.jpg" alt="" class="responsive">
                    </div>
                    <div class="photo-card-text">
                        <h4 class="photo-title">Шугаринг</h4>
@@ -53,11 +53,11 @@
                 </div>
                 <div class="photo-card">
                    <div class="photo-card-img">
-                       <img src="" alt="">
+                       <img src="/img/photogallery/cosmetology/1.PNG" alt="" class="responsive">
                    </div>
                    <div class="photo-card-text">
-                       <h4 class="photo-title">Депиляция</h4>
-                       <span>12 фото</span>
+                       <h4 class="photo-title">Косметология</h4>
+                       <span>10 фото</span>
                    </div>
                    <div class="photo-card-link"> 
                     <button class="photo-card-link__btn" 
@@ -70,11 +70,11 @@
                 </div>
                 <div class="photo-card">
                    <div class="photo-card-img">
-                       <img src="" alt="">
+                       <img src="./img/photogallery/spa/1.png" alt="" class="responsive">
                    </div>
                    <div class="photo-card-text">
-                       <h4 class="photo-title">Депиляция</h4>
-                       <span>12 фото</span>
+                       <h4 class="photo-title">Массажи и СПА</h4>
+                       <span>8 фото</span>
                    </div>
                    <div class="photo-card-link"> 
                     <button class="photo-card-link__btn" 
@@ -96,14 +96,14 @@
                        <h4 class="photo-title">Депиляция</h4>
                        <span>12 фото</span>
                    </div>
-                   <div class="photo-card-link"> 
-                    <button class="photo-card-link__btn" 
-                            onclick="openModal();
-                            currentSlide(1)">
-                        <span class="photo-card-link__name">Показать</span>
-                        <img src="./img/photo-arrow__green.svg" alt="">
-                    </button>
-               </div>  
+                    <div class="photo-card-link"> 
+                      <button class="photo-card-link__btn" 
+                              onclick="openModal();
+                              currentSlide(1)">
+                          <span class="photo-card-link__name">Показать</span>
+                          <img src="./img/photo-arrow__green.svg" alt="">
+                      </button>
+                    </div>  
                 </div>
                 <div class="photo-card">
                    <div class="photo-card-img">
@@ -172,7 +172,7 @@
         </div>
     </footer>
 
-    <!-- Modal photogalery -->
+    <!-- Modal photogalery Шугаринг -->
     <div id="myModal" class="modal__photo">
         <span class="close cursor" onclick="closeModal()">
           <img src="./img/close-icon.svg" alt="">
@@ -219,16 +219,18 @@
             <img src="/img/photogallery/shugaring/8.jpg"  class="responsive">
           </div>
   
-          <a class="prev_gallery" onclick="plusSlides(-1)">
-            <img src="/img/arrow-left.svg" class="box-arrow" alt="">
-          </a>
-          <a class="next_gallery" onclick="plusSlides(1)">
-            <img src="/img/arrow-right.svg" class="box-arrow" alt="">
-          </a>
+          <div class="wrapper-arrows__desk">
+            <a class="prev_gallery" onclick="plusSlides(-1)">
+              <img src="/img/arrow-left.svg" class="box-arrow" alt="">
+            </a>
+            <a class="next_gallery" onclick="plusSlides(1)">
+              <img src="/img/arrow-right.svg" class="box-arrow" alt="">
+            </a>
+          </div>
   
           
         </div>
-        <div class="wrapper">
+        <div class="wrapper-arrows__mob">
           <a class="prevMy" onclick="plusSlides(-1)">
             <img src="/img/arrow-left.svg" class="box-arrow" alt="">
           </a>
@@ -236,7 +238,13 @@
             <img src="/img/arrow-right.svg" class="box-arrow" alt="">
           </a>
         </div>
-      </div>
+    </div>
+
+
+    
+
+
+      
 
 
 

@@ -87,11 +87,11 @@
           padding-bottom: 3px;
         }
         &__btn {
-          border: 2px solid #26A69A;
+          border: none;
           width: 120px;
           height: 40px;
-          border-radius: 20px;
-          background-color: #fff;
+          border-radius: 5px;
+          background-color: rgba(38, 166, 154, 0.25);
           display: flex;
           justify-content: space-between;
           align-items: center;
@@ -99,6 +99,7 @@
           padding-left: 15px;
           transition: all 0.3s;
           &:hover {
+            background-color: rgba(38, 166, 154, 0.4);
             cursor: pointer;
             transition: all 0.3s;
             padding-right: 10px;
@@ -126,7 +127,6 @@
   /* Modal Content */
   .modal-content__photo {
     position: relative;
-    
     margin: auto;
     padding: 0;
     width: 100%;
@@ -191,7 +191,8 @@
     left: 0;
   }
   
-  .wrapper {
+  .wrapper-arrows__mob {
+    margin: auto;
     width: 150px;
     height: 60px;
     display: flex;
@@ -235,6 +236,15 @@
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
 
-  @media (mix-width: 768px) {
+  @media (max-width: 575.98px) {
+    
+
+    .wrapper-arrows__desk {
+      display: none;
+    }
+    .wrapper-arrows__mob {
+      display: flex;
+      margin-top: 50px;
+    }
   
 }
