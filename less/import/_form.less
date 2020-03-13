@@ -1,0 +1,59 @@
+.form-group {
+    width: 100%;
+}
+input {
+    width: 100%;
+    height: 50px;
+    padding-left: 10px;
+}
+
+.invalid input:required:invalid {
+    background: #BE4C54;
+}
+  
+.invalid input:required:valid {
+    background: #17D654 ;
+}
+
+.check {
+    width: 100%;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-check-input {
+    position: relative;
+    margin-top: 10px;
+    margin-left: 0;
+    width: 25px;
+    height: 25px;
+}
+
+.form-check-label {
+    width: 100%;
+    /* border: 1px solid springgreen; */
+    margin-top: 10px;
+    padding-left: 10px;
+}
+
+.close {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-submit {
+    width: 100%;
+    height: 60px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(38, 166, 154, 0.5);
+    color: #ffffff;
+    font-weight: bold;
+    &:hover {
+        background-color: rgba(38, 166, 154, 1);
+        cursor: pointer;
+        transition: all 0.3s;
+    }
+}
