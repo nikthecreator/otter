@@ -43,12 +43,10 @@
                        <span>8 фото</span>
                    </div>
                    <div class="photo-card-link"> 
-                        <button class="photo-card-link__btn" 
-                                onclick="openModal();
-                                currentSlide(1)">
-                            <span class="photo-card-link__name">Показать</span>
-                            <img src="./img/photo-arrow__green.svg" alt="">
-                        </button>
+                      <button type="button" class="photo-card-link__btn" data-toggle="modal" data-target="#exampleModalCenter">
+                        <span class="photo-card-link__name">Показать</span>
+                        <img src="./img/photo-arrow__green.svg" alt="">
+                      </button>
                    </div> 
                 </div>
                 <div class="photo-card">
@@ -60,11 +58,9 @@
                        <span>10 фото</span>
                    </div>
                    <div class="photo-card-link"> 
-                    <button class="photo-card-link__btn" 
-                            onclick="openModal();
-                            currentSlide(1)">
-                        <span class="photo-card-link__name">Показать</span>
-                        <img src="./img/photo-arrow__green.svg" alt="">
+                    <button type="button" class="photo-card-link__btn" data-toggle="modal" data-target="#exampleModalCenter">
+                      <span class="photo-card-link__name">Показать</span>
+                      <img src="./img/photo-arrow__green.svg" alt="">
                     </button>
                </div> 
                 </div>
@@ -77,11 +73,9 @@
                        <span>8 фото</span>
                    </div>
                    <div class="photo-card-link"> 
-                    <button class="photo-card-link__btn" 
-                            onclick="openModal();
-                            currentSlide(1)">
-                        <span class="photo-card-link__name">Показать</span>
-                        <img src="./img/photo-arrow__green.svg" alt="">
+                    <button type="button" class="photo-card-link__btn" data-toggle="modal" data-target="#exampleModalCenter">
+                      <span class="photo-card-link__name">Показать</span>
+                      <img src="./img/photo-arrow__green.svg" alt="">
                     </button>
                </div> 
                 </div>
@@ -97,11 +91,9 @@
                        <span>12 фото</span>
                    </div>
                     <div class="photo-card-link"> 
-                      <button class="photo-card-link__btn" 
-                              onclick="openModal();
-                              currentSlide(1)">
-                          <span class="photo-card-link__name">Показать</span>
-                          <img src="./img/photo-arrow__green.svg" alt="">
+                      <button type="button" class="photo-card-link__btn" data-toggle="modal" data-target="#exampleModalCenter">
+                        <span class="photo-card-link__name">Показать</span>
+                        <img src="./img/photo-arrow__green.svg" alt="">
                       </button>
                     </div>  
                 </div>
@@ -114,11 +106,9 @@
                        <span>12 фото</span>
                    </div>
                    <div class="photo-card-link"> 
-                    <button class="photo-card-link__btn" 
-                            onclick="openModal();
-                            currentSlide(1)">
-                        <span class="photo-card-link__name">Показать</span>
-                        <img src="./img/photo-arrow__green.svg" alt="">
+                    <button type="button" class="photo-card-link__btn" data-toggle="modal" data-target="#exampleModalCenter">
+                      <span class="photo-card-link__name">Показать</span>
+                      <img src="./img/photo-arrow__green.svg" alt="">
                     </button>
                </div> 
                 </div>
@@ -131,11 +121,9 @@
                        <span>12 фото</span>
                    </div>
                    <div class="photo-card-link"> 
-                    <button class="photo-card-link__btn" 
-                            onclick="openModal();
-                            currentSlide(1)">
-                        <span class="photo-card-link__name">Показать</span>
-                        <img src="./img/photo-arrow__green.svg" alt="">
+                    <button type="button" class="photo-card-link__btn" data-toggle="modal" data-target="#exampleModalCenter">
+                      <span class="photo-card-link__name">Показать</span>
+                      <img src="./img/photo-arrow__green.svg" alt="">
                     </button>
                </div>  
                 </div>
@@ -172,73 +160,47 @@
         </div>
     </footer>
 
-    <!-- Modal photogalery Шугаринг -->
-    <div id="myModal" class="modal__photo">
-        <span class="close cursor" onclick="closeModal()">
-          <img src="./img/close-icon.svg" alt="">
-        </span>
-        <div class="modal-content__photo">
-      
-          <div class="mySlides">
-            <div class="numbertext">1 / 8</div>
-            <img src="/img/photogallery/shugaring/1.jpg" class="responsive">
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalCenterTitle">
+              Шугаринг
+            </h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
           </div>
-      
-          <div class="mySlides">
-            <div class="numbertext">2 / 8</div>
-            <img src="/img/photogallery/shugaring/2.jpg" class="responsive">
+          <div class="modal-body">
+            <div class="wrap-modal-slider">
+              <div class="your-class">
+                <div><img src="./img/photogallery/shugaring/1.jpg" class="responsive-modal" alt=""></div>
+                <div><img src="./img/photogallery/shugaring/2.jpg" class="responsive-modal" alt=""></div>
+                <div><img src="./img/photogallery/shugaring/3.jpg" class="responsive-modal" alt=""></div>
+                <div><img src="./img/photogallery/shugaring/4.jpg" class="responsive-modal" alt=""></div>
+                <div><img src="./img/photogallery/shugaring/5.jpg" class="responsive-modal" alt=""></div>
+                <div><img src="./img/photogallery/shugaring/6.jpg" class="responsive-modal" alt=""></div>
+                <div><img src="./img/photogallery/shugaring/7.jpg" class="responsive-modal" alt=""></div>
+                <div><img src="./img/photogallery/shugaring/8.jpg" class="responsive-modal" alt=""></div>
+              </div>
+            </div>
           </div>
-      
-          <div class="mySlides">
-            <div class="numbertext">3 / 8</div>
-            <img src="./img/photogallery/shugaring/3.jpg" class="responsive">
+          <div class="modal-footer">
+            <div class="wrapp-footer__slideBtn">
+              <div class="prev-modal">
+                  <img src="./img/arow-left.svg" alt="">
+              </div>
+              <div class="next-modal">
+                  <img src="./img/arow-right.svg" alt="">
+              </div>
+            </div>
           </div>
-          
-          <div class="mySlides">
-            <div class="numbertext">4 / 8</div>
-            <img src="/img/photogallery/shugaring/4.jpg"  class="responsive">
-          </div>
-
-          <div class="mySlides">
-            <div class="numbertext">5 / 8</div>
-            <img src="/img/photogallery/shugaring/5.jpg" class="responsive">
-          </div>
-      
-          <div class="mySlides">
-            <div class="numbertext">6 / 8</div>
-            <img src="/img/photogallery/shugaring/6.jpg" class="responsive">
-          </div>
-      
-          <div class="mySlides">
-            <div class="numbertext">7 / 8</div>
-            <img src="./img/photogallery/shugaring/7.jpg" class="responsive">
-          </div>
-          
-          <div class="mySlides">
-            <div class="numbertext">8 / 8</div>
-            <img src="/img/photogallery/shugaring/8.jpg"  class="responsive">
-          </div>
-  
-          <div class="wrapper-arrows__desk">
-            <a class="prev_gallery" onclick="plusSlides(-1)">
-              <img src="/img/arrow-left.svg" class="box-arrow" alt="">
-            </a>
-            <a class="next_gallery" onclick="plusSlides(1)">
-              <img src="/img/arrow-right.svg" class="box-arrow" alt="">
-            </a>
-          </div>
-  
-          
         </div>
-        <div class="wrapper-arrows__mob">
-          <a class="prevMy" onclick="plusSlides(-1)">
-            <img src="/img/arrow-left.svg" class="box-arrow" alt="">
-          </a>
-          <a class="nextMy" onclick="plusSlides(1)">
-            <img src="/img/arrow-right.svg" class="box-arrow" alt="">
-          </a>
-        </div>
+      </div>
     </div>
+
+    
 
 
     
